@@ -26,11 +26,14 @@ print.addEventListener("click", async () => {
   try {
     const channel = await service.getCharacteristic(WRITE);
 
+    const today = new Date().toLocaleString().replace(/,/g, "");
+
     const cmds = [
       "SIZE 57 mm,31 mm",
       "CLS",
-      'TEXT 10,10,"4",0,1,1,"HackerNoon"',
-      'BARCODE 10,60,"128",90,1,0,2,2,"altospos.com"',
+      'TEXT 145,20,"4",0,1,1,"LEAP"',
+      `TEXT 40,60,"2",0,1,1,"${today}"`,
+      'QRCODE 130,95,L,5,A,0,"https://www.hcmus.edu.vn/"',
       "PRINT 1",
       "END",
     ];
