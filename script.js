@@ -31,9 +31,9 @@ print.addEventListener("click", async () => {
     const cmds = [
       "SIZE 57 mm,31 mm",
       "CLS",
-      'TEXT 145,20,"4",0,1,1,"LEAP"',
-      `TEXT 40,60,"2",0,1,1,"${today}"`,
-      'QRCODE 130,95,L,5,A,0,"https://www.hcmus.edu.vn/"',
+      'TEXT 160,20,"3",0,1,1,"LEAP"',
+      `TEXT 40,50,"2",0,1,1,"${today}"`,
+      'QRCODE 130,75,L,5,A,0,"https://inva.app/project/1001/plan-order/1551"',
       "PRINT 1",
       "END",
     ];
